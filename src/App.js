@@ -1,8 +1,7 @@
 import React from 'react';
 import { createGlobalStyle } from "styled-components";
-import Footer from './Components/Footer';
-import Header from './Components/Header';
-import Stock from './Components/Stock';
+import Bg from './Components/Bg';
+import Btn from './Components/Btn';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -15,9 +14,8 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Header />
-      <Stock />
-      <Footer />
+      <Bg />
+      <Btn />
     </>
   );
 }
