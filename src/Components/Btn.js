@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import * as I from "../Assets/index";
+import Information from '../Info';
 
 const Wrapper = styled.div`
   display: flex;
@@ -126,8 +127,9 @@ const ModalWrapper = styled.div`
 
 const ModalStock = styled.div`
   width: 62%;
-  height: 100%;
+  height: 95%;
   overflow-y: auto;
+  margin-top: 2vh;
 `;
 
 const ModalMap = styled.div`
@@ -148,7 +150,7 @@ const Content = styled.div`
   display: grid;
   justify-content: center;
   align-items: center;
-  margin: 2vh 2vh 2vh 2vh;
+  margin: 0 2vh 2vh 2vh;
   width: 20vh;
   height: 20vh;
   border-radius: 1rem;
@@ -166,6 +168,27 @@ function Btn() {
     setShowStockModal(false);
   }
 
+  const items = Information.map(data => {
+    return (
+      <>
+        {data.Name} <br />
+        재고: {data.Stock} 개 <br />
+      </>
+    )
+  })
+  const [searchTerm, setSearchTerm] = useState('')
+  const Test = Information.filter((val) => {
+    if (searchTerm == "") { return val }
+    else if (val.title.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase()) || val.Name.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())) { return val }
+  }).map((data, key) => {
+    return (
+      <div key={key}>
+        {data.Image}<br />
+        {data.Name} <br />
+        재고: {data.Stock} 개
+      </div>
+    )
+  })
   return (
     <>
       <Wrapper>
@@ -181,7 +204,7 @@ function Btn() {
               <ModalHeader>
                 <div className="HeaderText">Riosk</div>
                 <Search>
-                  <input type="text" placeholder="검색" className="SearchBox" />
+                  <input type="text" placeholder="검색" className="SearchBox" onChange={event => { setSearchTerm(event.target.value) }} />
                   <I.Search className="SearchButton" />
                 </Search>
                 <I.Delete onClick={closeModal} className="DeleteButton" />
@@ -189,31 +212,31 @@ function Btn() {
               <ModalWrapper>
                 <ModalStock>
                   <ContentWrapper>
-                    <Content><I.Shin />재고 : 10개</Content>
-                    <Content />
-                    <Content />
+                    <Content>{Test[0]}</Content>
+                    <Content>{Test[1]}</Content>
+                    <Content>{Test[2]}</Content>
                   </ContentWrapper>
                   <ContentWrapper>
-                    <Content />
-                    <Content />
-                    <Content />
+                    <Content>{Test[3]}</Content>
+                    <Content>{Test[4]}</Content>
+                    <Content>{Test[5]}</Content>
                   </ContentWrapper>
                   <ContentWrapper>
-                    <Content />
-                    <Content />
-                    <Content />
+                    <Content>{Test[6]}</Content>
+                    <Content>{Test[7]}</Content>
+                    <Content>{Test[8]}</Content>
                   </ContentWrapper>
                   <ContentWrapper>
-                    <Content />
-                    <Content />
-                    <Content />
+                    <Content>{Test[9]}</Content>
+                    <Content>{Test[10]}</Content>
+                    <Content>{Test[11]}</Content>
                   </ContentWrapper>
-                </ModalStock>
+
+                </ModalStock >
                 <ModalMap></ModalMap>
               </ModalWrapper>
             </ModalContainer>
           </Background> : null}
-
         <Announce>
           <TitleWrapper>
             <Title>매장</Title><Title2>안내</Title2>
