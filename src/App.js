@@ -1,7 +1,7 @@
 import React from 'react';
 import { createGlobalStyle } from "styled-components";
-import Bg from './Components/Bg';
-import Btn from './Components/Btn';
+import Bg from './Components/Bg/Bg';
+import Btn from './Components/Btn/Btn';
 
 const GlobalStyle = createGlobalStyle`
   body {
