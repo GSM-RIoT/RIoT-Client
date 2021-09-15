@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import * as I from "../Assets/index";
@@ -145,7 +146,6 @@ const ContentWrapper = styled.div`
   display: flex;
 `;
 
-
 const Content = styled.div`
   display: grid;
   justify-content: center;
@@ -167,18 +167,9 @@ function Btn() {
   const closeModal = () => {
     setShowStockModal(false);
   }
-
-  const items = Information.map(data => {
-    return (
-      <>
-        {data.Name} <br />
-        재고: {data.Stock} 개 <br />
-      </>
-    )
-  })
   const [searchTerm, setSearchTerm] = useState('')
   const Test = Information.filter((val) => {
-    if (searchTerm == "") { return val }
+    if (searchTerm === "") { return val }
     else if (val.title.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase()) || val.Name.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())) { return val }
   }).map((data, key) => {
     return (
@@ -189,6 +180,7 @@ function Btn() {
       </div>
     )
   })
+
   return (
     <>
       <Wrapper>
