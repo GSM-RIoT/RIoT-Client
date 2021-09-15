@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import * as I from "../../Assets/index";
 import * as S from "./style"
+import * as G from "../GlobalStyle";
 import Information from '../../Info';
 
 function StockModal() {
@@ -31,10 +32,10 @@ function StockModal() {
     return (
       <>
         <S.Stock showStockModal={showStockModal} onClick={openModal}>
-          <S.TitleWrapper>
-            <S.Title>상품</S.Title><S.Title2>재고</S.Title2>
-          </S.TitleWrapper>
-          <S.Image><I.Box /></S.Image>
+          <G.TitleWrapper>
+            <G.Title>상품</G.Title><G.Title2>재고</G.Title2>
+          </G.TitleWrapper>
+          <G.Image><I.Box /></G.Image>
         </S.Stock>
         {showStockModal ?
             <S.Background>
