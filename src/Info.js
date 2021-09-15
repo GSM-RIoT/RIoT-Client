@@ -4,74 +4,73 @@ import * as I from "./Assets/index";
 const Information = [
     {
         "Image": <I.Shin />,
-        "title": "Ramen",
+        "title": "라면",
         "Name": "신라면",
         "Stock": 10,
-
     },
     {
         "Image": <I.Jhin />,
-        "title": "Ramen",
+        "title": "라면",
         "Name": "진라면",
         "Stock": 9
     },
     {
         "Image": <I.SY />,
-        "title": "Ramen",
+        "title": "라면",
         "Name": "삼양라면",
         "Stock": 8
     },
     {
         "Image": <I.Samgak />,
-        "title": "Riceroll",
+        "title": "김밥",
         "Name": "삼각김밥",
         "Stock": 10
     },
     {
         "Image": <I.Tuna />,
-        "title": "Riceroll",
+        "title": "김밥",
         "Name": "참치김밥",
         "Stock": 9
     },
     {
         "Image": <I.Pork />,
-        "title": "Riceroll",
+        "title": "김밥",
         "Name": "돈까스김밥",
         "Stock": 8
     },
     {
         "Image": <I.Coke />,
-        "title": "Drink",
+        "title": "음료수",
         "Name": "콜라",
         "Stock": 10
     },
     {
         "Image": <I.Cider />,
-        "title": "Drink",
+        "title": "음료수",
         "Name": "사이다",
         "Stock": 9
     },
     {
         "Image": <I.Monster />,
-        "title": "Drink",
+        "title": "음료수",
         "Name": "몬스터",
         "Stock": 8
     },
     {
         "Image": <I.Poka />,
-        "title": "Snack",
+        "title": "과자",
         "Name": "포카칩",
         "Stock": 7
     },
     {
         "Image": <I.Oreo />,
-        "title": "Snack",
+        "title": "과자",
         "Name": "오레오",
         "Stock": 6
     },
     {
         "Image": <I.Corn />,
-        "title": "Snack",
+        "title": "과자",
         "Name": "꼬깔콘",
         "Stock": 5
     }
