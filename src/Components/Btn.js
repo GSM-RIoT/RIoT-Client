@@ -127,12 +127,14 @@ const ModalWrapper = styled.div`
 const ModalStock = styled.div`
   width: 62%;
   height: 100%;
+  overflow-y: auto;
 `;
 
 const ModalMap = styled.div`
   width: 38%;
   height: 95%;
   margin-top: 2vh;
+  margin-left: 1vh;
   border-radius: 1rem;
   background-color: #2d3547;
 `;
@@ -143,6 +145,9 @@ const ContentWrapper = styled.div`
 
 
 const Content = styled.div`
+  display: grid;
+  justify-content: center;
+  align-items: center;
   margin: 2vh 2vh 2vh 2vh;
   width: 20vh;
   height: 20vh;
@@ -164,8 +169,8 @@ function Btn() {
   return (
     <>
       <Wrapper>
-        <Stock>
-          <TitleWrapper showStockModal={showStockModal} onClick={openModal}>
+        <Stock showStockModal={showStockModal} onClick={openModal}>
+          <TitleWrapper>
             <Title>상품</Title><Title2>재고</Title2>
           </TitleWrapper>
           <Image><I.Box /></Image>
@@ -183,6 +188,11 @@ function Btn() {
               </ModalHeader>
               <ModalWrapper>
                 <ModalStock>
+                  <ContentWrapper>
+                    <Content><I.Shin />재고 : 10개</Content>
+                    <Content />
+                    <Content />
+                  </ContentWrapper>
                   <ContentWrapper>
                     <Content />
                     <Content />
