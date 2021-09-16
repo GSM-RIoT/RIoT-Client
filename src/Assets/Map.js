@@ -4,7 +4,7 @@ function Map(props) {
   return (
     <svg
       width="40vh"
-      height="40vh"
+      height="30vh"
       viewBox="0 0 5349 3834"
       fill="none"
       {...props}

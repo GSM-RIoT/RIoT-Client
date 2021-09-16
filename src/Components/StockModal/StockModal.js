@@ -73,8 +73,9 @@ function StockModal() {
                 </S.ContentWrapper>
               </S.ModalStock >
               <S.ModalMap>
-                <div className="Introduce_Text">설명</div>
+                <S.Desc>설명</S.Desc>
                 <S.Map><I.Map className="Map" /></S.Map>
+                <S.Exp>* 길게 누르시오</S.Exp>
               </S.ModalMap>
             </S.ModalWrapper>
           </S.ModalContainer>
