@@ -33,7 +33,7 @@ export const ModalContainer = styled.div`
     width: 120vh;
     height: 80%;
     padding: 16px;
-    background: rgb(25, 31, 44);
+    background: #8aa4db;
     border-radius: 10px;
     text-align: center;
 `;
@@ -54,28 +54,64 @@ export const ModalHeader = styled.div`
     }
 `;
 
-export const ModalProblem = styled.div`
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-  margin-left: 10vh;
-  color: #FFFFFF;
-  .ProblemWrapper{
-    margin-bottom: 5vh;
+export const Select = styled.div`
+  display: flex;
+  margin-top: 10vh;
+  margin-left: 25vh;
+  margin-right: 25vh;
+
+  .Icon {
+      cursor: pointer;
+    }
+
+  .text {
+    font-size: 2.3vh;
   }
 `;
 
-export const ModalHandle = styled.div`
-  display: grid;
-  list-style: none;
-  margin-left: 20vh;
-  .Handle {
+export const Fire = styled.div`
+  z-index: 15;
+  margin-top: 10  vh;
+
+  .Wrapper {
+    display: flex;
+  }
+
+  .Text {
+    font-size: 3vh;
+    margin-top: 4vh;
+  }
+`;
+
+export const Age = styled.div`
+  z-index: 15;
+
+  .Wrapper {
+    display: flex;
+  }
+
+  .Text {
     color: #FFFFFF;
   }
 `;
+export const Refund = styled.div`
+  z-index: 15;
 
-export const ModalWrapper = styled.div`
-  display: flex;
-  margin-top: 6vh;
+  .Wrapper {
+    display: flex;
+  }
+`;
+export const Shortage = styled.div`
+  z-index: 15;
+
+  .Wrapper {
+    display: flex;
+  }
+`;
+export const Package = styled.div`
+  z-index: 15;
+
+  .Wrapper {
+    display: flex;
+  }
 `;
