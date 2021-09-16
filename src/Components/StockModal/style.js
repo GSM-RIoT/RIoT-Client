@@ -91,6 +91,24 @@ export const ModalMap = styled.div`
   margin-left: 1vh;
   border-radius: 1rem;
   background-color: #2d3547;
+
+  .Introduce_Text {
+    font-size: 25px;
+    margin-bottom: 28vh;
+  }
+`;
+
+export const Map = styled.div`
+    .Map {
+    transform: scale(1);
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: translateX(-10vh) translate(-10vh) scale(2) translateY(-7vh) ;
+    transition: all 0.5s 3s;
+    transition-delay: 0.1s;
+  }
 `;
 
 export const ContentWrapper = styled.div`

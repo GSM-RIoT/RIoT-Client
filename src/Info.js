@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import * as I from "./Assets/index";
 
 const Information = [
