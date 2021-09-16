@@ -3,6 +3,7 @@ import * as I from "../../Assets/index";
 import * as S from "./style";
 import * as G from "../GlobalStyle";
 import Anc from "../../anc";
+import { Api } from '../../Api';
 
 function AncModal() {
   const [showAncModal, setShowAncModal] = useState(false);
@@ -79,7 +80,8 @@ function AncModal() {
                 <I.Delete className="DeleteButton" onClick={() => setShowAncModal(false)} />
               </S.ModalHeader>
               <S.Select>
-                <div className="content-wrapper">
+                <div className="content-wrapper" onClick={() => Api(1)}>
+                  {console.log(Api(1))}
                   <I.Fire className="Icon" onClick={onFire} />
                   <p className="text">화재</p>
                 </div>
