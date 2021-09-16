@@ -30,6 +30,15 @@ function StockModal() {
     )
   })
 
+  const items = Information.map(data => {
+    return (
+      <>
+        {data.Name} <br/>
+        {data.Price}원
+      </>
+    )
+  })
+
   return (
     <>
       <S.Stock showStockModal={showStockModal} onClick={openModal}>
@@ -73,7 +82,27 @@ function StockModal() {
                 </S.ContentWrapper>
               </S.ModalStock >
               <S.ModalMap>
-                <S.Desc>설명</S.Desc>
+                <S.Desc>
+                  <S.DescTitle>시세</S.DescTitle>
+                  <S.ContentWrapper>
+                    <S.Content2>{items[0]}</S.Content2>
+                    <S.Content2>{items[1]}</S.Content2>
+                    <S.Content2>{items[2]}</S.Content2>
+                    <S.Content2>{items[3]}</S.Content2>
+                  </S.ContentWrapper>
+                  <S.ContentWrapper>
+                    <S.Content2>{items[4]}</S.Content2>
+                    <S.Content2>{items[5]}</S.Content2>
+                    <S.Content2>{items[6]}</S.Content2>
+                    <S.Content2>{items[7]}</S.Content2>
+                  </S.ContentWrapper>
+                  <S.ContentWrapper>
+                    <S.Content2>{items[8]}</S.Content2>
+                    <S.Content2>{items[9]}</S.Content2>
+                    <S.Content2>{items[10]}</S.Content2>
+                    <S.Content2>{items[11]}</S.Content2>
+                  </S.ContentWrapper>
+                </S.Desc>
                 <S.Map><I.Map className="Map" /></S.Map>
                 <S.Exp>* 길게 누르시오</S.Exp>
               </S.ModalMap>

@@ -94,8 +94,12 @@ export const ModalMap = styled.div`
 `;
 
 export const Desc = styled.div`
+    margin-bottom: 6vh;
+`;
+
+export const DescTitle = styled.div`
+    margin: 2vh 2vh 2vh 2vh;
     font-size: 25px;
-    margin-bottom: 28vh;
 `;
 
 export const Map = styled.button`
@@ -110,7 +114,7 @@ export const Map = styled.button`
   }
 
   &:active {
-    transform: translateX(-12vh) translate(-8vh) scale(2) translateY(-8vh) ;
+    transform: translateX(-11.5vh) translate(-8vh) scale(2) translateY(-8vh) ;
     transition: all 0.5s 3s;
     transition-delay: 0.1s;
   }
@@ -136,4 +140,16 @@ export const Content = styled.div`
   height: 20vh;
   border-radius: 1rem;
   background-color: #5f6b85;
+`;
+
+export const Content2 = styled.div`
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1vh 1vh 1vh;
+  width: 10vh;
+  height: 5vh;
+  border-radius: 1rem;
+  background-color: #5f6b85;
+  font-size: 15px;
 `;
