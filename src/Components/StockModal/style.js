@@ -93,6 +93,36 @@ export const ModalMap = styled.div`
   background-color: #2d3547;
 `;
 
+export const Desc = styled.div`
+    font-size: 25px;
+    margin-bottom: 28vh;
+`;
+
+export const Map = styled.button`
+    width: 440px;
+    height: 300px;
+    margin-top: 5vh;
+    .Map {
+      transform: scale(1);
+      cursor: pointer;
+      margin-left: -0.7vh;
+      margin-top: -1vh;
+  }
+
+  &:active {
+    transform: translateX(-12vh) translate(-8vh) scale(2) translateY(-8vh) ;
+    transition: all 0.5s 3s;
+    transition-delay: 0.1s;
+  }
+`;
+
+export const Exp = styled.div`
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color: #FFFFFF;
+`;
+
 export const ContentWrapper = styled.div`
   display: flex;
 `;

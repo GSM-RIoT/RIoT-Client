@@ -14,3 +14,4 @@ export { default as Cider } from "./Cider";
 export { default as Poka } from "./Poka";
 export { default as Oreo } from "./Oreo";
 export { default as Corn } from "./Corn";
+export { default as Map } from './Map';
