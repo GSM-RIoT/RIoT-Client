@@ -81,23 +81,22 @@ function AncModal() {
               </S.ModalHeader>
               <S.Select>
                 <div onClick={() => Api(1)}>
-                  {console.log(Api(1))}
                   <I.Fire className="Icon" onClick={onFire} />
                   <p className="text">화재</p>
                 </div>
-                <div>
+                <div onClick={() => Api(2)}>
                   <I.CheckAge className="Icon" onClick={onAge} />
                   <p className="text">민증 확인</p>
                 </div>
-                <div>
+                <div onClick={() => Api(3)}>
                   <I.Refund className="Icon" onClick={onRefund} />
                   <p className="text">환불</p>
                 </div>
-                <div>
+                <div onClick={() => Api(4)}>
                   <I.Shortage className="Icon" onClick={onShortage} />
                   <p className="text">재고 부족</p>
                 </div>
-                <div>
+                <div onClick={() => Api(5)}>
                   <I.Package className="Icon" onClick={onPackage} />
                   <p className="text">물건 손상</p>
                 </div>
