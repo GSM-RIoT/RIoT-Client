@@ -56,62 +56,128 @@ export const ModalHeader = styled.div`
 
 export const Select = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 10vh;
-  margin-left: 25vh;
-  margin-right: 25vh;
+  margin-left: 5vh; 
 
   .Icon {
       cursor: pointer;
+      margin-right: 7vh;
     }
 
   .text {
     font-size: 2.3vh;
+    margin-right: 7vh;
   }
 `;
 
 export const Fire = styled.div`
   z-index: 15;
-  margin-top: 10  vh;
-
+  margin-top: 11vh;
+  margin-left: 14vh;
   .Wrapper {
     display: flex;
   }
 
+  .logo {
+    width: 50px;
+    height: 50px;
+    background-color: #FFFFFF;
+  }
+
   .Text {
     font-size: 3vh;
-    margin-top: 4vh;
+    margin-top: 3.5vh;
+    margin-left: 15vh;
+    width: 61vh;
   }
 `;
 
 export const Age = styled.div`
   z-index: 15;
-
+  margin-top: 11vh;
+  margin-left: 14vh;
   .Wrapper {
     display: flex;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    background-color: #FFFFFF;
   }
 
   .Text {
-    color: #FFFFFF;
+    font-size: 3vh;
+    margin-top: 3.5vh;
+    margin-left: 15vh;
+    width: 61vh;
   }
 `;
+
 export const Refund = styled.div`
   z-index: 15;
-
+  margin-top: 11vh;
+  margin-left: 14vh;
   .Wrapper {
     display: flex;
   }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    background-color: #FFFFFF;
+  }
+
+  .Text {
+    font-size: 3vh;
+    margin-top: 3.5vh;
+    margin-left: 15vh;
+    width: 61vh;
+  }
 `;
+
 export const Shortage = styled.div`
   z-index: 15;
-
+  margin-top: 11vh;
+  margin-left: 14vh;
   .Wrapper {
     display: flex;
   }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    background-color: #FFFFFF;
+  }
+
+  .Text {
+    font-size: 3vh;
+    margin-top: 3.5vh;
+    margin-left: 15vh;
+    width: 61vh;
+  }
 `;
+
 export const Package = styled.div`
   z-index: 15;
-
+  margin-top: 11vh;
+  margin-left: 14vh;
   .Wrapper {
     display: flex;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    background-color: #FFFFFF;
+  }
+
+  .Text {
+    font-size: 3vh;
+    margin-top: 3.5vh;
+    margin-left: 15vh;
+    width: 61vh;
   }
 `;
