@@ -80,24 +80,24 @@ function AncModal() {
                 <I.Delete className="DeleteButton" onClick={() => setShowAncModal(false)} />
               </S.ModalHeader>
               <S.Select>
-                <div className="content-wrapper" onClick={() => Api(1)}>
+                <div onClick={() => Api(1)}>
                   {console.log(Api(1))}
                   <I.Fire className="Icon" onClick={onFire} />
                   <p className="text">화재</p>
                 </div>
-                <div className="content-wrapper">
+                <div>
                   <I.CheckAge className="Icon" onClick={onAge} />
                   <p className="text">민증 확인</p>
                 </div>
-                <div className="content-wrapper">
+                <div>
                   <I.Refund className="Icon" onClick={onRefund} />
                   <p className="text">환불</p>
                 </div>
-                <div className="content-wrapper">
+                <div>
                   <I.Shortage className="Icon" onClick={onShortage} />
                   <p className="text">재고 부족</p>
                 </div>
-                <div className="content-wrapper">
+                <div>
                   <I.Package className="Icon" onClick={onPackage} />
                   <p className="text">물건 손상</p>
                 </div>
